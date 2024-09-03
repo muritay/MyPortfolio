@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <hi>Random Quote Generator</hi>
+    <div id="quotedisplay"></div>
+    <button onclick="getQuote">Get New Quote</button>
+
+    <script>
+        const quote = [
+        "The beginning of the day is vitality"
+        "important to how the rest of your day is likely to go"
+        "If you don’t want to get up on the wrong side of the bed"
+        "make it a habit to start your day off with a motivational quote or even more than one"
+        "It can help put you in the right frame of mind"
+        "so that you have a much more positive day"
+        "than you would've otherwise had"
+        "Everyone needs a little help to get the day started on a positive note"
+        "there's nothing better to do this than a good cup of coffee and"
+        "an inspirational and motivational quote"
+        ]
+
+        function getQuote() {
+            let randomIndex = Math.floor(Math.random() *quote.length)
+            document.getElementById('quotedisplay').textCount =quote[randomTndex]
+        }
+    </script>
+</body>
+</html>
